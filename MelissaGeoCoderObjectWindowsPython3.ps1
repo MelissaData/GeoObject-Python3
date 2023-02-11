@@ -1,5 +1,5 @@
-# Name:    MelissaDataGeoCoderObjectWindowsPython3Sample
-# Purpose: Use the Melissa Updater to make the MelissaDataGeoCoderObjectWindowsPython3 sample usable
+# Name:    MelissaGeoCoderObjectWindowsPython3
+# Purpose: Use the Melissa Updater to make the MelissaGeoCoderObjectWindowsPython3 code usable
 
 
 ######################### Parameters ##########################
@@ -26,7 +26,7 @@ $ProductName = "GEOCODER_DATA"
 # Modify this if you want to use 
 $CurrentPath = $PSScriptRoot
 Set-Location $CurrentPath
-$ProjectPath = "$CurrentPath\MelissaDataGeoCoderObjectWindowsPython3Sample"
+$ProjectPath = "$CurrentPath\MelissaGeoCoderObjectWindowsPython3"
 $DataPath = "$ProjectPath\Data"
 
 If (!(Test-Path $DataPath)) {
@@ -111,7 +111,7 @@ function CheckDLLs() {
 
 ########################## Main ############################
 
-Write-Host "`n================= Sample of Melissa Data GeoCoder Object ==================`n                    [ Python3 | Windows | 64BIT ]`n"
+Write-Host "`n========================= Melissa GeoCoder Object =========================`n                    [ Python3 | Windows | 64BIT ]`n"
 
 # Get license (either from parameters or user input)
 if ([string]::IsNullOrEmpty($license) ) {
@@ -147,14 +147,11 @@ if (!$DLLsAreDownloaded) {
 
 Write-Host "All file(s) have been downloaded/updated! "
 
-# Start sample
-# Build project
-Write-Host "`n============================== BUILD PROJECT =============================="
-
+# Start
 # Run project
 if ([string]::IsNullOrEmpty($zip)) {
-  python3 MelissaDataGeoCoderObjectWindowsPython3Sample/MelissaDataGeoCoderObjectWindowsPython3Sample.py --license $License  --dataPath $DataPath
+  python3 MelissaGeoCoderObjectWindowsPython3/MelissaGeoCoderObjectWindowsPython3.py --license $License  --dataPath $DataPath
 }
 else {
-  python3 MelissaDataGeoCoderObjectWindowsPython3Sample/MelissaDataGeoCoderObjectWindowsPython3Sample.py --license $License  --dataPath $DataPath --zip $zip
+  python3 MelissaGeoCoderObjectWindowsPython3/MelissaGeoCoderObjectWindowsPython3.py --license $License  --dataPath $DataPath --zip $zip
 }

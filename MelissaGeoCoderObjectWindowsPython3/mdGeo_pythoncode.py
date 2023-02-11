@@ -6,9 +6,9 @@ import os
 dir = os.getcwd()
 
 if (os.name == 'nt'):
-  lib = ctypes.CDLL(f'{dir}/MelissaDataGeoCoderObjectWindowsPython3Sample/mdGeo.dll')
+  lib = ctypes.CDLL(f'{dir}/MelissaGeoCoderObjectWindowsPython3/mdGeo.dll')
 else:
-  lib = ctypes.CDLL('libmdPhone.so')
+  lib = ctypes.CDLL(f'{dir}/MelissaGeoCoderObjectLinuxPython3/libmdPhone.so')
 
 lib.mdGeoCreate.argtypes = []
 lib.mdGeoCreate.restype = c_void_p
