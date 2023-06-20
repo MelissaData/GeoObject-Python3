@@ -150,8 +150,12 @@ Write-Host "All file(s) have been downloaded/updated! "
 # Start
 # Run project
 if ([string]::IsNullOrEmpty($zip)) {
-  python3 MelissaGeoCoderObjectWindowsPython3/MelissaGeoCoderObjectWindowsPython3.py --license $License  --dataPath $DataPath
+  Push-Location MelissaGeoCoderObjectWindowsPython3
+  python3 MelissaGeoCoderObjectWindowsPython3.py --license $License  --dataPath $DataPath
+  Pop-Location
 }
 else {
-  python3 MelissaGeoCoderObjectWindowsPython3/MelissaGeoCoderObjectWindowsPython3.py --license $License  --dataPath $DataPath --zip $zip
+  Push-Location MelissaGeoCoderObjectWindowsPython3
+  python3 MelissaGeoCoderObjectWindowsPython3.py --license $License  --dataPath $DataPath --zip $zip
+  Pop-Location
 }
