@@ -1,7 +1,6 @@
 # Melissa - GeoCoder Object Windows Python3
 
 ## Purpose
-
 This code showcases the Melissa GeoCoder Object using Python3
 
 Please feel free to copy or embed this code to your own project. Happy coding!
@@ -10,19 +9,19 @@ For the latest Melissa GeoCoder Object release notes, please visit: https://rele
 
 The console will ask the user for:
 
-- Zip Code
+- Zip 
 
 And return 
 
 For US:
 
-- PlaceName
+- Place Name
 - County
-- CountySubdivisionName
-- TimeZone
+- County Subdivision Name
+- Time Zone
 - Latitude
 - Longitude
-- ResultCodes
+- Result Codes
 
 For Canada:
 
@@ -33,7 +32,7 @@ For Canada:
 ## Tested Environments
 
 - Windows 10 64-bit Python 3.8.7, Powershell 5.1
-- Melissa data files for 2023-06
+- Melissa data files for 2023-07
 
 ## Required File(s) and Programs
 
@@ -75,7 +74,6 @@ If you see the version number then you have installed Python3 and set up your en
 ----------------------------------------
 
 #### Set up Powershell settings
-
 If running Powershell for the first time, you will need to run this command in the Powershell console: `Set-ExecutionPolicy RemoteSigned`.
 The console will then prompt you with the following warning shown in the image below. 
  - Enter `'A'`. 
@@ -87,12 +85,11 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/GeoObject-Python3.git
+$ git clone https://github.com/MelissaData/GeoObject-Python3
 $ cd GeoObject-Python3
 ```
 
 #### Set up Melissa Updater 
-
 Melissa Updater is a CLI application allowing the user to update their Melissa applications/data. 
 
 - Download Melissa Updater here: <https://releases.melissadata.net/Download/Library/WINDOWS/NET/ANY/latest/MelissaUpdater.exe>
@@ -108,8 +105,6 @@ Melissa Updater is a CLI application allowing the user to update their Melissa a
 	- Use the location of where you copied/installed the data and update the "$DataPath" variable in the powershell script.
 	- Copy all the dll(s) mentioned above into the `MelissaGeoCoderObjectWindowsPython3` project folder.
 	
-----------------------------------------
-
 ## Run Powershell Script
 Parameters:
 - -zip: a test zip code
@@ -152,11 +147,9 @@ This is the expected output from a successful setup for interactive mode:
 
     
 ## Troubleshooting
-
 Troubleshooting for errors found while running your program.
 
 ### Errors:
-
 | Error      | Description |
 | ----------- | ----------- |
 | ErrorRequiredFileNotFound      | Program is missing a required file. Please check your Data folder and refer to the list of required files above. If you are unable to obtain all required files through the Melissa Updater, please contact technical support below. |
@@ -166,7 +159,6 @@ Troubleshooting for errors found while running your program.
 
 
 ## Contact Us
-
 For free technical support, please call us at 800-MELISSA ext. 4
 (800-635-4772 ext. 4) or email us at tech@melissa.com.
 
