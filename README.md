@@ -32,7 +32,7 @@ For Canada:
 ## Tested Environments
 
 - Windows 10 64-bit Python 3.8.7, Powershell 5.1
-- Melissa data files for 2024-01
+- Melissa data files for 2024-Q3
 
 ## Required File(s) and Programs
 
